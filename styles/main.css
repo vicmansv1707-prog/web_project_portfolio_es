@@ -1,0 +1,167 @@
+.main {
+  margin: 0;
+  padding: 80px;
+}
+.main__section {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.main__section-title {
+  max-width: 603px;
+  width: 100%;
+  height: 100%;
+  max-height: 44px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  font-family: "Archivo Black";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(28px, 3vw, 40px);
+  line-height: clamp(32px, 3vw, 44px);
+}
+.main__section-images {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  gap: 40px;
+}
+.main__section_image-icon {
+  max-width: clamp(30px, 3vw, 50px);
+  height: clamp(30px, 3vw, 50px);
+  display: flex;
+  flex-direction: row;
+}
+.main__projects {
+  width: 100%;
+  max-width: 487px;
+  height: 100%;
+  font-family: "Archivo Black";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(28px, 3vw, 40px);
+  line-height: clamp(32px, 3vw, 44px);
+  margin-bottom: 50px;
+}
+.main__cards {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 20px;
+}
+.main__card {
+  width: 100%;
+  max-width: 590px;
+  height: 100%;
+  background: #1c1c1c;
+}
+.main__card_image-container {
+  width: 100%;
+  max-width: 590px;
+  height: auto;
+  position: relative; /* necesario para posicionar iconos encima */
+}
+.main__card-image {
+  width: 100%;
+  max-width: 590px;
+  height: auto;
+  display: block;
+}
+.main__card_image-icon-container {
+  position: absolute; /* se coloca sobre la imagen */
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  gap: 10px;
+}
+.main__card_image-icon {
+  width: 100%;
+  max-width: clamp(20px, 3vw, 40px);
+}
+.main__card-info {
+  max-width: 530px;
+  height: 100%;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.main__card-title {
+  margin: 0;
+  width: auto;
+  max-width: 339px;
+  height: 33px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(20px, 2vw, 24px);
+  line-height: clamp(29px, 2vw, 33px);
+}
+.main__card-description {
+  width: 100%;
+  max-width: 590px;
+  height: 100%;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  line-height: clamp(23px, 2vw, 25px);
+  font-size: clamp(16px, 2vw, 18px);
+}
+.main__card-icon-container {
+  width: 100%;
+}
+.main__card-icon {
+  width: 100%;
+  max-height: 22px;
+  margin-right: 20px;
+  text-decoration: none;
+}
+.main__card-icon-vector {
+  width: 100%;
+  max-width: 132px;
+  left: 30px;
+}
+.main__card-icon-vector:hover {
+  opacity: 50%;
+}
+.main__card-icon-github {
+  width: auto;
+  max-width: 83px;
+}
+.main__card-icon-github:hover {
+  opacity: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    padding: 0;
+  }
+  .main__cards {
+    width: 100%;
+    flex-direction: column;
+    column-gap: 20px;
+  }
+  .main__card-image {
+    width: 100%;
+    max-width: 680px;
+    height: auto;
+  }
+  .main__card-title {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .main__section-title {
+    width: auto;
+  }
+
+  .main__section-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 30px;
+    margin-bottom: 60px;
+  }
+}
