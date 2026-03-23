@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url(/fonts/OpenSans-Bold.woff2);
+}
+@font-face {
+  font-family: "Archivo Black";
+  src: url(/fonts/ArchivoBlack-Regular.woff2);
+}
+body {
+  background-color: black;
+  padding: 40px;
+  color: #fff;
+  margin: 0 auto;
+}
+.page {
+  max-width: 1440px;
+}
