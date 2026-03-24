@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Open Sans";
-  src: url(/fonts/OpenSans-Bold.woff2);
+  src: url(/fonts/OpenSans-Regular.woff2);
 }
 @font-face {
   font-family: "Archivo Black";
@@ -8,10 +8,21 @@
 }
 body {
   background-color: black;
-  padding: 40px;
+  padding: 120px;
   color: #fff;
-  margin: 0 auto;
 }
 .page {
   max-width: 1440px;
+}
+@media screen and (max-width: 1023px) {
+  body {
+    padding: 80px;
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  body {
+    padding: 20px;
+    margin-top: 20px;
+  }
 }
